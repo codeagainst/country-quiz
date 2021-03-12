@@ -1,7 +1,7 @@
 export function getRandomNum(max) {
   return Math.floor(Math.random() * Math.floor(max))
 }
-
+//Randomizer
 export function getRandomNumbers(num, excludedNums, max) {
   const randomNumbers = []
   let increment = 0
@@ -41,5 +41,6 @@ export function shuffleArray(array) {
     array[randomIndex] = temporaryValue;
   }
 
+  //ugly i know, but soon i´ll refactor to typescript and get rid of this
   return array;
 }
