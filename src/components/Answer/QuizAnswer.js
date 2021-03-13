@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useAppContext } from '../../state/index';
+
 import './QuizAnswer.css'
 
 const QuizAnswer = ({name, index, isCorrect}) => {

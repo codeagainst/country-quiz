@@ -77,14 +77,16 @@ const StateProvider = ({children}) => {
         }
         getData()
     }, [])
-
+// eslint-disable-next-line
     useEffect(() => {        
-        if(fullData.length > 0) {            
+        if(fullData.length > 0) {   
+          // eslint-disable-next-line         
             drawNewQuestions()
         }
+        // eslint-disable-next-line
     }, [fullData])
 
-// maybe revisit EpicReact for a less imperative approach
+
     return (
         <AppContext.Provider
         value={{
@@ -103,4 +105,4 @@ const StateProvider = ({children}) => {
     )
 }
 
-export default StateProvider;
+export default StateProvider
