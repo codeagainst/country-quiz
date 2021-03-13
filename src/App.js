@@ -1,8 +1,8 @@
 import './App.css';
-import QuizContainer from './components/QuizContainer'
-import Result from './components/Result'
+import QuizContainer from './components/Container/QuizContainer'
+import Result from './components/Results/Results'
 
-import {useAppContext} from './state'
+import {useAppContext} from './state/index'
 //refactor schedule to May when completed Typescript course
 function App() {
 
